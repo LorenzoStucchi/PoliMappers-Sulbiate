@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <head>
     <title>PoliMappers@Sulbiate</title>
-    <script src='mapbox.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet'/>
 
 </head>
@@ -10,7 +10,7 @@
 <h2><b>
     <center>Elementi raccolti nel mappathon a Sulbiate con i Polimappers</center>
 </b></h2>
-<div id='map'></div>
+<div id='map' style='width: 400px; height: 300px;'></div>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibG9yZW56b3N0dWNjaGkiLCJhIjoiY2poOHkxbDV3MDZ6YjMwbzM2M2R1MjYxeiJ9._wsXJw4kbG-02Bhh9EXNQg';
     var map = new mapboxgl.Map({
