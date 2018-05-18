@@ -5,20 +5,24 @@
   <meta charset="utf-8">
   <title>PoliMappers@Sulbiate</title>
   <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css" rel="stylesheet"> </head>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css"> </head>
 
 <body>
   <h2><b>
-    <h1 class="text-center display-3">Elementi raccolti nel mappathon a Sulbiate con i Polimappers</h1>
+    <h1 class="text-center display-4 bg-primary text-dark">Elementi raccolti nel mappathon a Sulbiate con i Polimappers</h1>
 </b></h2>
-  <div id="map" style="width: 100%; height: 90%"></div>
+  <div id="map" style="width: 100%; height: 90%" class="bg-secondary"></div>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibG9yZW56b3N0dWNjaGkiLCJhIjoiY2poOHkxbDV3MDZ6YjMwbzM2M2R1MjYxeiJ9._wsXJw4kbG-02Bhh9EXNQg';
 
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/lorenzostucchi/cjh93piyd02s62rp7uj8oj0o6',
+      	center: [9.4215,45.6364],
+        zoom: 16
     });
+    map.addControl ( new.mapboxgl.NavigationControl());
   </script>
 </body>
 
