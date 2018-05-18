@@ -10,9 +10,21 @@
 
 <body>
   <h2><b>
-    <h1 class="text-center display-4 bg-primary text-dark">Elementi raccolti nel mappathon a Sulbiate con i Polimappers</h1>
+    <h1 class="text-center display-4 bg-primary text-dark">Polimappers@Sulbiate</h1>
 </b></h2>
+  <div class="py-5 bg-primary">
+    <div class="container">
+      <div class="row">
+        <div id="map" class="col-md-10" style="width: 100%; height: 90%"></div>
+        <div class="col-md-2" style="">
+          <p class="">La mappa rappresenta gli elementi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
   <div id="map" style="width: 100%; height: 90%" class="bg-secondary"></div>
+-->
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibG9yZW56b3N0dWNjaGkiLCJhIjoiY2poOHkxbDV3MDZ6YjMwbzM2M2R1MjYxeiJ9._wsXJw4kbG-02Bhh9EXNQg';
 
@@ -22,7 +34,7 @@
       	center: [9.4215,45.6364],
         zoom: 16
     });
-    map.addControl ( new.mapboxgl.NavigationControl());
+    map.addControl(new.mapboxgl.NavigationControl());
   </script>
 </body>
 
