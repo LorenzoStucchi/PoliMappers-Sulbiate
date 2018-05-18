@@ -2,43 +2,45 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>PoliMappers@Sulbiate</title>
-  <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"></script>
-  <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css" rel="stylesheet">
-  <link rel="stylesheet" href="theme.css"> </head>
+    <meta charset="utf-8">
+    <title>PoliMappers@Sulbiate</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+</head>
 
 <body>
-  <h2><b>
+<h2><b>
     <h3 class="text-center display-4 text-dark">Polimappers@Sulbiate</h3>
 </b></h2>
-  <div class="py-5">
+<div class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="my-auto">La mappa sotto rappresenta gli elementi che sono stati aggiunti su OpenStreetMap durante l'evento di mappatura tenuto dai
-            <a href="https://polimappers.github.io/" class="">PoliMappers</a> il 15 Aprile 2018.
-            <br> Sono stati mappatati alcuni servizi disponibili nel territorio comunale. Gli elementi sono:
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Panchine,
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Cestini della spazzatura,
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Attraversamenti pedonali,
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Parcheggi per le biciclette,
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Fontanelle pubbliche,
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Cestini per la raccolta di indumenti e batterie.
-            <br>Scopri più informazioni su
-            <a href="https://www.openstreetmap.org/#map=16/45.6358/9.4212" class="">OpenStreetMap</a>.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="my-auto">La mappa sotto rappresenta gli elementi che sono stati aggiunti su OpenStreetMap
+                    durante l'evento di mappatura tenuto dai
+                    <a href="https://polimappers.github.io/" class="">PoliMappers</a> il 15 Aprile 2018.
+                    <br> Sono stati mappatati alcuni servizi disponibili nel territorio comunale. Gli elementi sono:
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Panchine,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Cestini della spazzatura,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Attraversamenti pedonali,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Parcheggi per le biciclette,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Fontanelle pubbliche,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;Cestini per la raccolta di indumenti e batterie.
+                    <br>Scopri più informazioni su
+                    <a href="https://www.openstreetmap.org/#map=16/45.6358/9.4212" class="">OpenStreetMap</a>.</p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="py-5">
+</div>
+<div class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 h-100" id="map" style="height: 600 px"></div>
-      </div>
+        <div class="row">
+            <div class="col-md-12" id="map" style="height: 600px"></div>
+        </div>
     </div>
-  </div>
-  <script>
+</div>
+<script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibG9yZW56b3N0dWNjaGkiLCJhIjoiY2poOHkxbDV3MDZ6YjMwbzM2M2R1MjYxeiJ9._wsXJw4kbG-02Bhh9EXNQg';
 
     var map = new mapboxgl.Map({
@@ -48,7 +50,7 @@
         zoom: 14
     });
     map.addControl(new mapboxgl.NavigationControl());
-  </script>
+</script>
 </body>
 
 </html>
